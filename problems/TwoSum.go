@@ -6,7 +6,7 @@ package problems
 
 import "fmt"
 
-func twoSum(nums []int, target int) []int { 
+func twoSum(nums []int, target int) []int {
 	for index := 0; index < len(nums); index++ {
 		temp := target - nums[index]
 		for i := index + 1; i < len(nums); i++ {

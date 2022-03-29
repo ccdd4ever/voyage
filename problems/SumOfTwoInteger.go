@@ -1,8 +1,6 @@
 //Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.
 //see @https://leetcode.com/problems/sum-of-two-integers/
-package main
-
-
+package problems
 
 //we can calculate like adder or summer in digit circut
 // A	B	C	S
@@ -22,17 +20,18 @@ func add(a int32, b int32) int32 {
 	}
 	return add(a&b<<1, a^b)
 }
-func lengthOfLongestSubstring(s string) int {
-    length:=1
-    for i:=0;i<len(s);i++ {
-        for p:=i+1 ; p < len(s);p ++ {
-            if s[i]==s[p] {
-                if (p-i)>length {
-                   length=p-i
-                }
-                break
-            }
-        }
- }   
- return length
-}
+
+//func lengthOfLongestSubstring(s string) int {
+//    length:=1
+//    for i:=0;i<len(s);i++ {
+//        for p:=i+1 ; p < len(s);p ++ {
+//            if s[i]==s[p] {
+//                if (p-i)>length {
+//                   length=p-i
+//                }
+//                break
+//            }
+//        }
+// }
+// return length
+//}
